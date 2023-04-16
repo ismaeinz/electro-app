@@ -1,0 +1,31 @@
+nav {
+  background-color: #1f1d29;
+  font-family: 'Montserrat', sans-serif;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: white;
+  padding: 0 2% 0 2%;
+
+}
+
+ul {
+  display: flex;
+  list-style: none;
+
+}
+
+ul li {
+  display: flex;
+
+}
+
+ul li span {
+  color: #d41737;
+
+}
+
+ul li span,
+p {
+  padding: 2px;
+}
