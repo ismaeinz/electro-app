@@ -1,12 +1,8 @@
 import React from "react";
-import Navbar from "./components/navbar/Navbar";
+import Electro from "./components/Electro";
 
 const App = () => {
-  return (
-    <div>
-      <Navbar />
-    </div>
-  );
+  return <Electro />;
 };
 
 export default App;
