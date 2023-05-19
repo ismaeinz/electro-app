@@ -1,60 +1,89 @@
 .nav-container {
   background-color: #1f1d29;
   font-family: "Montserrat", sans-serif;
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
   color: white;
-  height: 40px;
+  font-weight: bold;
+
+}
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 23px;
 }
 
 .nav-ul__left,
 .nav-ul__right {
-  list-style: none;
   display: flex;
+  padding: 0;
 }
+
 .nav-ul__item {
   display: flex;
+  justify-content: space-around;
+  align-items: center;
   font-size: 15px;
-  padding-top: 20px;
   cursor: pointer;
+  margin: 0 10px 0 0;
 }
 
-.nav-ul__item span,
-.nav-ul__item span {
+.nav-ul__item {
+  margin: 0 10px 0 0;
+
+}
+
+.nav-ul__item :first-child {
   color: #d41737;
-  margin: 0 5px;
+
 }
 
-@media only screen and (max-width: 600px) {
-  .nav-container {
+
+
+@media only screen and (max-width: 768px) and (min-width: 481px) {
+
+  .nav {
     display: flex;
     justify-content: start;
     align-items: center;
-    color: white;
-    height: 60px;
+    flex-direction: column;
   }
+
+
   .nav-ul__left,
   .nav-ul__right {
-    height: 30px;
-    font-weight: bold;
-    flex-direction: row;
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 10px;
+    cursor: pointer;
+  }
+
+  .nav-ul__item {
+    font-size: 12px;
+    padding-top: 3px;
+  }
+
+}
+
+@media only screen and (max-width: 600px) and (min-width: 300px) {
+  .nav {
+    display: flex;
+    justify-content: start;
+    flex-direction: row;
+    height: 100%;
+  }
+
+
+  .nav-ul__left,
+  .nav-ul__right {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    margin: 10px
   }
 
   .nav-ul__item {
     font-size: 10px;
-  }
-}
-
-@media only screen and (min-width: 600px) {
-  .nav-ul__left,
-  .nav-ul__right {
-    height: 40px;
-    font-size: 10px;
-    font-weight: bold;
   }
 }
